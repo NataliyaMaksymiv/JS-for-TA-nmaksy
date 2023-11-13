@@ -1,15 +1,32 @@
+<!--Task 2-->
 alert ('Maksymiv');
 
 
+<!--Task 3-->
 let catName = 'Lola';
 let dogName = 'Archie';
-alert(catName);
+console.log(catName);
         
 catName = dogName;
 console.log (catName);
 
 
+<!--Task 4-->
+const myObject = {
+String: "myFawString",
+Number: 100,
+Boolean: true,
+Undefined: undefined,
+Null: null
+};
 
+
+<!--Task 5-->
+let isAdult = confirm("Are you of legal age?");
+console.log(isAdult);
+
+
+<!--Task 6-->
 let myName = "Nata";
 let mySurname = "Maksymiv";
 let myStudyGroup = "JS for TA";
@@ -26,34 +43,19 @@ console.log(myStudyGroup);
 console.log(typeof arbitraryFirst);
 console.log(typeof arbitrarySecond);
 
-
-    
-
-const myObject = {
-String: "myFawString",
-Number: 100,
-Boolean: true,
-Undefined: undefined,
-Null: null
-};
-
 console.log (typeof myObject);
 
 
 
-let isAdult = confirm("Are you of legal age?");
-
-console.log(isAdult);
-
-
-
-login = prompt("Please, enter your login here", "Login");
-email = prompt("Please, enter your email here", "Email");
+<!--Task 7-->
+let login = prompt("Please, enter your login here", "Login");
+let email = prompt("Please, enter your email here", "Email");
 password = prompt("Please, enter the password here", "Password");
 confirm("Dear " + login +", your email is "+ email + ", your password is " + password +"." );
 
- 
 
+ 
+<!--Task 8-->
 let minute = prompt("Enter a number of minutes to convert into seconds:");
             
 let second = minute * 60;
