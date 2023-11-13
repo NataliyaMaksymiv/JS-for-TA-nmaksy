@@ -1,8 +1,8 @@
-<!--Task 2-->
+// Task 2
 alert ('Maksymiv');
 
 
-<!--Task 3-->
+// Task 3
 let catName = 'Lola';
 let dogName = 'Archie';
 console.log(catName);
@@ -11,7 +11,7 @@ catName = dogName;
 console.log (catName);
 
 
-<!--Task 4-->
+// Task 4
 const myObject = {
 String: "myFawString",
 Number: 100,
@@ -21,12 +21,12 @@ Null: null
 };
 
 
-<!--Task 5-->
+// Task 5
 let isAdult = confirm("Are you of legal age?");
 console.log(isAdult);
 
 
-<!--Task 6-->
+// Task 6
 let myName = "Nata";
 let mySurname = "Maksymiv";
 let myStudyGroup = "JS for TA";
@@ -47,7 +47,7 @@ console.log (typeof myObject);
 
 
 
-<!--Task 7-->
+// Task 7
 let login = prompt("Please, enter your login here", "Login");
 let email = prompt("Please, enter your email here", "Email");
 password = prompt("Please, enter the password here", "Password");
@@ -55,7 +55,7 @@ confirm("Dear " + login +", your email is "+ email + ", your password is " + pas
 
 
  
-<!--Task 8-->
+// Task 8
 let minute = prompt("Enter a number of minutes to convert into seconds:");
             
 let second = minute * 60;
