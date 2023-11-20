@@ -2,31 +2,21 @@
 
 let myArray = [2, 3, 4, 5];
 
-console.log(myArray.length);
-
-
-for (let i = 0; myArray.length; i++) 
+for (let i = 0; i< myArray.length; i++) 
 { console.log(myArray[i]); 
 }
 
-
-while (i < 5) {
-    alert ( i );
+i = 0;
+while (i < myArray.length) {
+    console.log ( myArray[i]);
     i++;
 }
 
 // Task 2
 
-let i = 2;
-while (i<= 5) {
-    if( i % 2 == 0) {
-        console.log(i + " is even number");
+for (let i = 0; i < 15; i++) {
+    i % 2 == 0 ? console.log(i + " is even") : console.log(i + " is odd");
     }
-    else {
-        console.log(i + " is odd number");
-    }
-}
-
 
 // Task 3
 
@@ -34,10 +24,13 @@ function rankArray(k) {
     
     let randNumbs = [];
     for (let i = 0; i < k; i ++) {
-        randNumbs.push(Math.random())
+        randNumbs.push((Math.random() * 50).toFixed(0) + 1);
     }
     return randNumbs;
 }
+
+console.log(rankArray(6));
+
 
 // Task 4
 let a = parseInt(prompt ("Please enter a:  "));
@@ -51,20 +44,18 @@ console.log(raiseToDegree());
 
 // Task 5
 
-function findMin() {
-    if (args.length === 0) {
-      return undefined; 
-    }
-    let min = args[0];
-    for (let i = 1; i < args.length; i++) {
-      if (args[i] < min) {
-        min = args[i];
-      }
+function findMin(){
+    let i = 0;
+        min = arguments[0];
+
+    for (i = 1; i < arguments.length; i++) {
+        if (min > arguments[i]) {
+            min = arguments[i];
+        }
     }
     return min;
-  }
-  console.log(findMin(12, 14, 4, -4, 0.2));
-
+}
+console.log(findMin(12, 14, 4, -4, 0.2));
 
 // Task 6
 
