@@ -1,16 +1,15 @@
 // Task 1
 
-function propsCount(myObject){
     let mentor = {
         course: "JS fundamental",
         duration: 3,
         direction: "web development"
-}
 };
 function propsCount(myObject) {
     return Object.entries(myObject).length;
-}
+};
 
+propsCount(mentor);
 
 // Task 2
 
@@ -27,7 +26,7 @@ function showProps (obj) {
   
     console.log(myArrayObject);
     console.log(myArrayValues);
-  }
+  };
   
 showProps (student);
 
@@ -42,7 +41,7 @@ class Person {
     showFullName () {
         return `${this.name} ${this.surname}`;
     }
-}
+};
 
 
 class Student extends Person {
@@ -60,12 +59,12 @@ class Student extends Person {
         return Number(currentDate.getFullYear()) - Number(this.year)
 
     };
-}
+};
 
 
-const stud1 = new Student("Petro", " Petrenko ", 2015);
-console.log(stud1.showFullName(" Petrovych ")); // Petrenko Petro Petrovych
-console.log("Current course: " + stud1.showCourse()); //Current course: 6
+const student1 = new Student("Petro", " Petrenko ", 2015);
+console.log(student1.showFullName(" Petrovych ")); // Petrenko Petro Petrovych
+console.log("Current course: " + student1.showCourse()); //Current course: 6
 
 
 
@@ -94,7 +93,7 @@ class Worker {
     set experience(updatedExperience){
        this.#experience = updatedExperience;
     }
-}
+};
 
 let worker1 = new Worker("John Johnson", 20, 26);
 console.log(worker1.fullName);
